@@ -1,0 +1,6 @@
+- Cerinte
+- Functionalitati
+- UX
+- Integrare cu alte limbaje/sisteme
+- Limbaje folosite
+- Cum face app. viata mea mai buna?
