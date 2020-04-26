@@ -1,0 +1,12 @@
+D:\Proiect\Cinema\Cinema\bin\Debug\Cinema.exe.config
+D:\Proiect\Cinema\Cinema\bin\Debug\Cinema.exe
+D:\Proiect\Cinema\Cinema\bin\Debug\Cinema.pdb
+D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.csprojAssemblyReference.cache
+D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.Options.resources
+D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.Login.resources
+D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.Properties.Resources.resources
+D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.csproj.GenerateResource.cache
+D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.csproj.CoreCompileInputs.cache
+D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.exe
+D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.pdb
+D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.Reservation.resources
