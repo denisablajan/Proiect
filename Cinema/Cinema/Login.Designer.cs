@@ -30,25 +30,25 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.signin = new System.Windows.Forms.TabPage();
-            this.signup = new System.Windows.Forms.TabPage();
             this.goBtn = new System.Windows.Forms.Button();
             this.authpasswordTB = new System.Windows.Forms.TextBox();
             this.authemailTB = new System.Windows.Forms.TextBox();
             this.authpasswordLbl = new System.Windows.Forms.Label();
             this.authemailLbl = new System.Windows.Forms.Label();
-            this.fnameLbl = new System.Windows.Forms.Label();
-            this.lnameLbl = new System.Windows.Forms.Label();
-            this.addressLbl = new System.Windows.Forms.Label();
-            this.repassLbl = new System.Windows.Forms.Label();
-            this.passLbl = new System.Windows.Forms.Label();
-            this.emailLbl = new System.Windows.Forms.Label();
-            this.fnameTB = new System.Windows.Forms.TextBox();
-            this.lnameTB = new System.Windows.Forms.TextBox();
-            this.addressTB = new System.Windows.Forms.TextBox();
-            this.emailTB = new System.Windows.Forms.TextBox();
-            this.passTB = new System.Windows.Forms.TextBox();
-            this.repassTB = new System.Windows.Forms.TextBox();
+            this.signup = new System.Windows.Forms.TabPage();
             this.createBtn = new System.Windows.Forms.Button();
+            this.repassTB = new System.Windows.Forms.TextBox();
+            this.passTB = new System.Windows.Forms.TextBox();
+            this.emailTB = new System.Windows.Forms.TextBox();
+            this.addressTB = new System.Windows.Forms.TextBox();
+            this.lnameTB = new System.Windows.Forms.TextBox();
+            this.fnameTB = new System.Windows.Forms.TextBox();
+            this.emailLbl = new System.Windows.Forms.Label();
+            this.passLbl = new System.Windows.Forms.Label();
+            this.repassLbl = new System.Windows.Forms.Label();
+            this.addressLbl = new System.Windows.Forms.Label();
+            this.lnameLbl = new System.Windows.Forms.Label();
+            this.fnameLbl = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.signin.SuspendLayout();
             this.signup.SuspendLayout();
@@ -78,29 +78,6 @@
             this.signin.TabIndex = 0;
             this.signin.Text = "Sign in";
             this.signin.UseVisualStyleBackColor = true;
-            // 
-            // signup
-            // 
-            this.signup.Controls.Add(this.createBtn);
-            this.signup.Controls.Add(this.repassTB);
-            this.signup.Controls.Add(this.passTB);
-            this.signup.Controls.Add(this.emailTB);
-            this.signup.Controls.Add(this.addressTB);
-            this.signup.Controls.Add(this.lnameTB);
-            this.signup.Controls.Add(this.fnameTB);
-            this.signup.Controls.Add(this.emailLbl);
-            this.signup.Controls.Add(this.passLbl);
-            this.signup.Controls.Add(this.repassLbl);
-            this.signup.Controls.Add(this.addressLbl);
-            this.signup.Controls.Add(this.lnameLbl);
-            this.signup.Controls.Add(this.fnameLbl);
-            this.signup.Location = new System.Drawing.Point(4, 25);
-            this.signup.Name = "signup";
-            this.signup.Padding = new System.Windows.Forms.Padding(3);
-            this.signup.Size = new System.Drawing.Size(793, 424);
-            this.signup.TabIndex = 1;
-            this.signup.Text = "Sign up";
-            this.signup.UseVisualStyleBackColor = true;
             // 
             // goBtn
             // 
@@ -144,50 +121,80 @@
             this.authemailLbl.TabIndex = 5;
             this.authemailLbl.Text = "Email:";
             // 
-            // fnameLbl
+            // signup
             // 
-            this.fnameLbl.AutoSize = true;
-            this.fnameLbl.Location = new System.Drawing.Point(153, 61);
-            this.fnameLbl.Name = "fnameLbl";
-            this.fnameLbl.Size = new System.Drawing.Size(78, 17);
-            this.fnameLbl.TabIndex = 0;
-            this.fnameLbl.Text = "First name:";
+            this.signup.Controls.Add(this.createBtn);
+            this.signup.Controls.Add(this.repassTB);
+            this.signup.Controls.Add(this.passTB);
+            this.signup.Controls.Add(this.emailTB);
+            this.signup.Controls.Add(this.addressTB);
+            this.signup.Controls.Add(this.lnameTB);
+            this.signup.Controls.Add(this.fnameTB);
+            this.signup.Controls.Add(this.emailLbl);
+            this.signup.Controls.Add(this.passLbl);
+            this.signup.Controls.Add(this.repassLbl);
+            this.signup.Controls.Add(this.addressLbl);
+            this.signup.Controls.Add(this.lnameLbl);
+            this.signup.Controls.Add(this.fnameLbl);
+            this.signup.Location = new System.Drawing.Point(4, 25);
+            this.signup.Name = "signup";
+            this.signup.Padding = new System.Windows.Forms.Padding(3);
+            this.signup.Size = new System.Drawing.Size(793, 424);
+            this.signup.TabIndex = 1;
+            this.signup.Text = "Sign up";
+            this.signup.UseVisualStyleBackColor = true;
             // 
-            // lnameLbl
+            // createBtn
             // 
-            this.lnameLbl.AutoSize = true;
-            this.lnameLbl.Location = new System.Drawing.Point(153, 102);
-            this.lnameLbl.Name = "lnameLbl";
-            this.lnameLbl.Size = new System.Drawing.Size(78, 17);
-            this.lnameLbl.TabIndex = 1;
-            this.lnameLbl.Text = "Last name:";
+            this.createBtn.Location = new System.Drawing.Point(335, 355);
+            this.createBtn.Name = "createBtn";
+            this.createBtn.Size = new System.Drawing.Size(75, 23);
+            this.createBtn.TabIndex = 12;
+            this.createBtn.Text = "Create account";
+            this.createBtn.UseVisualStyleBackColor = true;
+            this.createBtn.Click += new System.EventHandler(this.createBtn_Click);
             // 
-            // addressLbl
+            // repassTB
             // 
-            this.addressLbl.AutoSize = true;
-            this.addressLbl.Location = new System.Drawing.Point(153, 145);
-            this.addressLbl.Name = "addressLbl";
-            this.addressLbl.Size = new System.Drawing.Size(64, 17);
-            this.addressLbl.TabIndex = 2;
-            this.addressLbl.Text = "Address:";
+            this.repassTB.Location = new System.Drawing.Point(279, 281);
+            this.repassTB.Name = "repassTB";
+            this.repassTB.Size = new System.Drawing.Size(408, 22);
+            this.repassTB.TabIndex = 11;
             // 
-            // repassLbl
+            // passTB
             // 
-            this.repassLbl.AutoSize = true;
-            this.repassLbl.Location = new System.Drawing.Point(153, 284);
-            this.repassLbl.Name = "repassLbl";
-            this.repassLbl.Size = new System.Drawing.Size(73, 17);
-            this.repassLbl.TabIndex = 3;
-            this.repassLbl.Text = "Password:";
+            this.passTB.Location = new System.Drawing.Point(279, 233);
+            this.passTB.Name = "passTB";
+            this.passTB.Size = new System.Drawing.Size(408, 22);
+            this.passTB.TabIndex = 10;
             // 
-            // passLbl
+            // emailTB
             // 
-            this.passLbl.AutoSize = true;
-            this.passLbl.Location = new System.Drawing.Point(153, 236);
-            this.passLbl.Name = "passLbl";
-            this.passLbl.Size = new System.Drawing.Size(73, 17);
-            this.passLbl.TabIndex = 4;
-            this.passLbl.Text = "Password:";
+            this.emailTB.Location = new System.Drawing.Point(279, 187);
+            this.emailTB.Name = "emailTB";
+            this.emailTB.Size = new System.Drawing.Size(408, 22);
+            this.emailTB.TabIndex = 9;
+            // 
+            // addressTB
+            // 
+            this.addressTB.Location = new System.Drawing.Point(279, 142);
+            this.addressTB.Name = "addressTB";
+            this.addressTB.Size = new System.Drawing.Size(408, 22);
+            this.addressTB.TabIndex = 8;
+            // 
+            // lnameTB
+            // 
+            this.lnameTB.Location = new System.Drawing.Point(279, 102);
+            this.lnameTB.Name = "lnameTB";
+            this.lnameTB.Size = new System.Drawing.Size(408, 22);
+            this.lnameTB.TabIndex = 7;
+            // 
+            // fnameTB
+            // 
+            this.fnameTB.Location = new System.Drawing.Point(279, 61);
+            this.fnameTB.Name = "fnameTB";
+            this.fnameTB.Size = new System.Drawing.Size(408, 22);
+            this.fnameTB.TabIndex = 6;
             // 
             // emailLbl
             // 
@@ -198,56 +205,50 @@
             this.emailLbl.TabIndex = 5;
             this.emailLbl.Text = "Email:";
             // 
-            // fnameTB
+            // passLbl
             // 
-            this.fnameTB.Location = new System.Drawing.Point(279, 61);
-            this.fnameTB.Name = "fnameTB";
-            this.fnameTB.Size = new System.Drawing.Size(408, 22);
-            this.fnameTB.TabIndex = 6;
+            this.passLbl.AutoSize = true;
+            this.passLbl.Location = new System.Drawing.Point(153, 236);
+            this.passLbl.Name = "passLbl";
+            this.passLbl.Size = new System.Drawing.Size(73, 17);
+            this.passLbl.TabIndex = 4;
+            this.passLbl.Text = "Password:";
             // 
-            // lnameTB
+            // repassLbl
             // 
-            this.lnameTB.Location = new System.Drawing.Point(279, 102);
-            this.lnameTB.Name = "lnameTB";
-            this.lnameTB.Size = new System.Drawing.Size(408, 22);
-            this.lnameTB.TabIndex = 7;
+            this.repassLbl.AutoSize = true;
+            this.repassLbl.Location = new System.Drawing.Point(153, 284);
+            this.repassLbl.Name = "repassLbl";
+            this.repassLbl.Size = new System.Drawing.Size(73, 17);
+            this.repassLbl.TabIndex = 3;
+            this.repassLbl.Text = "Password:";
             // 
-            // addressTB
+            // addressLbl
             // 
-            this.addressTB.Location = new System.Drawing.Point(279, 142);
-            this.addressTB.Name = "addressTB";
-            this.addressTB.Size = new System.Drawing.Size(408, 22);
-            this.addressTB.TabIndex = 8;
+            this.addressLbl.AutoSize = true;
+            this.addressLbl.Location = new System.Drawing.Point(153, 145);
+            this.addressLbl.Name = "addressLbl";
+            this.addressLbl.Size = new System.Drawing.Size(64, 17);
+            this.addressLbl.TabIndex = 2;
+            this.addressLbl.Text = "Address:";
             // 
-            // emailTB
+            // lnameLbl
             // 
-            this.emailTB.Location = new System.Drawing.Point(279, 187);
-            this.emailTB.Name = "emailTB";
-            this.emailTB.Size = new System.Drawing.Size(408, 22);
-            this.emailTB.TabIndex = 9;
+            this.lnameLbl.AutoSize = true;
+            this.lnameLbl.Location = new System.Drawing.Point(153, 102);
+            this.lnameLbl.Name = "lnameLbl";
+            this.lnameLbl.Size = new System.Drawing.Size(78, 17);
+            this.lnameLbl.TabIndex = 1;
+            this.lnameLbl.Text = "Last name:";
             // 
-            // passTB
+            // fnameLbl
             // 
-            this.passTB.Location = new System.Drawing.Point(279, 233);
-            this.passTB.Name = "passTB";
-            this.passTB.Size = new System.Drawing.Size(408, 22);
-            this.passTB.TabIndex = 10;
-            // 
-            // repassTB
-            // 
-            this.repassTB.Location = new System.Drawing.Point(279, 281);
-            this.repassTB.Name = "repassTB";
-            this.repassTB.Size = new System.Drawing.Size(408, 22);
-            this.repassTB.TabIndex = 11;
-            // 
-            // createBtn
-            // 
-            this.createBtn.Location = new System.Drawing.Point(335, 355);
-            this.createBtn.Name = "createBtn";
-            this.createBtn.Size = new System.Drawing.Size(75, 23);
-            this.createBtn.TabIndex = 12;
-            this.createBtn.Text = "Create account";
-            this.createBtn.UseVisualStyleBackColor = true;
+            this.fnameLbl.AutoSize = true;
+            this.fnameLbl.Location = new System.Drawing.Point(153, 61);
+            this.fnameLbl.Name = "fnameLbl";
+            this.fnameLbl.Size = new System.Drawing.Size(78, 17);
+            this.fnameLbl.TabIndex = 0;
+            this.fnameLbl.Text = "First name:";
             // 
             // Login
             // 
