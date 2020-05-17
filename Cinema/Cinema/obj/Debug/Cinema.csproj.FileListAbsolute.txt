@@ -31,3 +31,12 @@ D:\Proiect\Cinema\Cinema\bin\Debug\MongoDB.Driver.Core.xml
 D:\Proiect\Cinema\Cinema\bin\Debug\Snappy.NET.xml
 D:\Proiect\Cinema\Cinema\bin\Debug\System.Buffers.xml
 D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.csproj.CopyComplete
+D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.Movies.resources
+D:\Proiect\Cinema\Cinema\bin\Debug\System.Memory.dll
+D:\Proiect\Cinema\Cinema\bin\Debug\System.Numerics.Vectors.dll
+D:\Proiect\Cinema\Cinema\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Proiect\Cinema\Cinema\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\Proiect\Cinema\Cinema\bin\Debug\System.Memory.xml
+D:\Proiect\Cinema\Cinema\bin\Debug\System.Numerics.Vectors.xml
+D:\Proiect\Cinema\Cinema\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Proiect\Cinema\Cinema\bin\Debug\System.Text.Encoding.CodePages.xml

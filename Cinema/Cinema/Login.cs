@@ -28,9 +28,9 @@ Persist Security Info=False;";
             if (ct > 0) 
             {
                 con.Close();
-                Reservation reserve = new Reservation();
+                Movies movie = new Movies();
                 Hide();
-                reserve.ShowDialog();
+                movie.ShowDialog();
             }
             else
             {

@@ -1,6 +1,6 @@
 ﻿namespace Cinema
 {
-    partial class Reservation
+    partial class Movie_info
     {
         /// <summary>
         /// Required designer variable.
@@ -41,14 +41,14 @@
             this.backtomoviesBtn.UseVisualStyleBackColor = true;
             this.backtomoviesBtn.Click += new System.EventHandler(this.backtomoviesBtn_Click);
             // 
-            // Reservation
+            // Movie_info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.backtomoviesBtn);
-            this.Name = "Reservation";
-            this.Text = "Reservation";
+            this.Name = "Movie_info";
+            this.Text = "Movie information";
             this.ResumeLayout(false);
 
         }

@@ -148,12 +148,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reservation.cs">
+    <Compile Include="Movie_info.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reservation.Designer.cs">
-      <DependentUpon>Reservation.cs</DependentUpon>
+    <Compile Include="Movie_info.Designer.cs">
+      <DependentUpon>Movie_info.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Movies.resx">
+      <DependentUpon>Movies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Options.resx">
       <DependentUpon>Options.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,8 +172,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reservation.resx">
-      <DependentUpon>Reservation.cs</DependentUpon>
+    <EmbeddedResource Include="Movie_info.resx">
+      <DependentUpon>Movie_info.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
