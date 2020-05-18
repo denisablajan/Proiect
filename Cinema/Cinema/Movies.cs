@@ -31,7 +31,7 @@ Persist Security Info=False;";
 
         private void movieBtn_Click(object sender, EventArgs e)
         {
-            Movie_info info = new Movie_info();
+            Movie_info info = new Movie_info(idmovie);
             Hide();
             info.ShowDialog();
         }

@@ -4,9 +4,7 @@
 - Functionalitati: Aplicatia faciliteaza optiunile de: 
 	- verificare a filmelor din cinema, 
 	- verificare a informatiilor despre filme, 
-	- vizionare trailer, 
-	- verificare sali libere, 
-	- verificare locuri libere, 
+	- verificare sali, locuri libere, 
 	- rezervare bilete si sali
 - UX: Aplicatia este usor de folosit, fara elemente care sa produca confuzie; in design se folosesc culori si alte elemente care sa nu incarce aspectul
 - Integrare cu alte limbaje/sisteme:

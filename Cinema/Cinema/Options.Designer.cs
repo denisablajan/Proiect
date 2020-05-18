@@ -44,9 +44,9 @@
             // 
             // movie
             // 
-            this.movie.Location = new System.Drawing.Point(477, 201);
+            this.movie.Location = new System.Drawing.Point(448, 201);
             this.movie.Name = "movie";
-            this.movie.Size = new System.Drawing.Size(107, 40);
+            this.movie.Size = new System.Drawing.Size(125, 40);
             this.movie.TabIndex = 1;
             this.movie.Text = "Choose movie";
             this.movie.UseVisualStyleBackColor = true;
