@@ -27,7 +27,7 @@ Persist Security Info=False;";
             id = idmovie;
         }
 
-        private void Movie_info_Load(object sender, EventArgs e)
+        public void Movie_info_Load(object sender, EventArgs e)
         {
             con.Open();
             OleDbCommand cmd = new OleDbCommand("select * from Movies where id_movie=" + id + "", con);
@@ -64,14 +64,14 @@ Persist Security Info=False;";
             con.Close();
         }
 
-        private void backtomoviesBtn_Click(object sender, EventArgs e)
+        public void backtomoviesBtn_Click(object sender, EventArgs e)
         {
             Movies movie = new Movies();
             Hide();
             movie.ShowDialog();
         }
 
-        private void imdbLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        public void imdbLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(imdbLink);
         }

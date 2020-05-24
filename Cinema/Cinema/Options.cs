@@ -17,14 +17,14 @@ namespace Cinema
             InitializeComponent();
         }
 
-        private void login_Click(object sender, EventArgs e)
+        public void login_Click(object sender, EventArgs e)
         {
             Login client = new Login();
             Hide();
             client.ShowDialog();
         }
 
-        private void movie_Click(object sender, EventArgs e)
+        public void movie_Click(object sender, EventArgs e)
         {
             Movies movie = new Movies();
             Hide();

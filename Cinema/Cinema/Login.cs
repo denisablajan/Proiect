@@ -14,7 +14,7 @@ namespace Cinema
             con.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Environment.CurrentDirectory + @"\Cinema.accdb;
 Persist Security Info=False;";
         }
-        private void goBtn_Click(object sender, EventArgs e)
+        public void goBtn_Click(object sender, EventArgs e)
         {
             int ct = 0;
             con.Open();
@@ -79,7 +79,7 @@ Persist Security Info=False;";
                         cmd2.ExecuteNonQuery();
                         rdr.Close();
                         con.Close();
-                        MessageBox.Show("Account created! You can turn to the Sign in page.");
+                        MessageBox.Show("Account created! You can go to the Sign in page.");
                     }
                     else
                     {

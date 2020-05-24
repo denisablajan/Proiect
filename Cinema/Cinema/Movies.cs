@@ -24,12 +24,12 @@ namespace Cinema
 Persist Security Info=False;";
         }
 
-        private void exitBtn_Click(object sender, EventArgs e)
+        public void exitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void movieBtn_Click(object sender, EventArgs e)
+        public void movieBtn_Click(object sender, EventArgs e)
         {
             Movie_info info = new Movie_info(idmovie);
             Hide();
