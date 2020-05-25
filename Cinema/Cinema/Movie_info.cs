@@ -52,8 +52,8 @@ Persist Security Info=False;";
                         genreTb.Text = rdr2[1].ToString();
                 }
                 ageTb.Text = rdr[3].ToString();
-                priceTb.Text = rdr[7].ToString();
-                roomTb.Text = rdr[8].ToString();
+                priceTb.Text = rdr[6].ToString();
+                roomTb.Text = rdr[7].ToString();
                 //picture
                 string img = rdr["poster"].ToString();
                 if (img != "")
@@ -73,7 +73,7 @@ Persist Security Info=False;";
 
         public void imdbLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(imdbLink);
+            System.Diagnostics.Process.Start(imdbLink.Trim('#'));
         }
     }
 }

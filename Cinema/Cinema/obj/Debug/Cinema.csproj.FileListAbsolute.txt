@@ -30,3 +30,6 @@ D:\Proiect\Cinema\Cinema\bin\Debug\System.Numerics.Vectors.xml
 D:\Proiect\Cinema\Cinema\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Proiect\Cinema\Cinema\bin\Debug\System.Text.Encoding.CodePages.xml
 D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.Movie_info.resources
+D:\Proiect\Cinema\Cinema\bin\Debug\snappy32.dll
+D:\Proiect\Cinema\Cinema\bin\Debug\snappy64.dll
+D:\Proiect\Cinema\Cinema\bin\Debug\libzstd.dll
