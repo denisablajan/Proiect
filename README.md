@@ -1,13 +1,19 @@
 # Cinema
 
-- Cerinte: Sistem de rezervare bilete pentru cinema
-- Functionalitati: Aplicatia faciliteaza optiunile de: 
-	- verificare a filmelor din cinema, 
-	- verificare a informatiilor despre filme, 
-	- verificare sali, locuri libere, 
-	- rezervare bilete si sali
-- UX: Aplicatia este usor de folosit, fara elemente care sa produca confuzie; in design se folosesc culori si alte elemente care sa nu incarce aspectul
-- Integrare cu alte limbaje/sisteme:
-- Limbaje folosite: C#
-- Cum face aplicatia viata mea mai buna?
-  Aplicatia are rolul de a face mai usoara selectarea filmelor preferate din cinema si mai rapida achizitionarea biletelor fara a mai fi nevoie de deplasare, eliminand astfel riscul de a nu mai gasi bilete la filmul dorit. 
+- Objective: Tickets reservation system
+
+- Functionalities: 
+	- check available movies in cinema, 
+	- check movies information, 
+	- check available rooms and sits, 
+	- tickets reservation
+	
+- UX: The Cinema App is easy to use for any type of user, especially for movie lovers, without confusing elements;
+
+- Integration with other languages/systems: SQL, Access Database
+
+- Programming language: C#
+
+- "How does this app make my life better?"
+  
+  It makes easier selecting the favorite movie available in cinema and quicker the ticket reservation process. You don't need to worry about not finding the tickets to the movie you like when they are just one click away.
