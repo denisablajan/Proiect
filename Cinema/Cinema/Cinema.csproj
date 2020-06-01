@@ -52,6 +52,7 @@
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
@@ -116,6 +117,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CinemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CinemaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Movies.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,17 @@
     <EmbeddedResource Include="Movie_info.resx">
       <DependentUpon>Movie_info.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CinemaDataSet.xsc">
+      <DependentUpon>CinemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CinemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CinemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CinemaDataSet.xss">
+      <DependentUpon>CinemaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -179,6 +196,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\pic\WonderWoman.jpg" />
+    <Content Include="Cinema.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />

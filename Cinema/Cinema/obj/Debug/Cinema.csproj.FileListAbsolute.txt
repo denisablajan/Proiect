@@ -33,3 +33,4 @@ D:\Proiect\Cinema\Cinema\obj\Debug\Cinema.Movie_info.resources
 D:\Proiect\Cinema\Cinema\bin\Debug\snappy32.dll
 D:\Proiect\Cinema\Cinema\bin\Debug\snappy64.dll
 D:\Proiect\Cinema\Cinema\bin\Debug\libzstd.dll
+D:\Proiect\Cinema\Cinema\bin\Debug\Cinema.accdb

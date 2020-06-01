@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Configuration;
 
 namespace Cinema
 {
@@ -20,8 +14,8 @@ namespace Cinema
         public Movies()
         {
             InitializeComponent();
-            con.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Environment.CurrentDirectory + @"\Cinema.accdb;
-Persist Security Info=False;";
+            string connectionString = ConfigurationManager.ConnectionStrings["Cinema.Properties.Settings.CinemaConnectionString"].ConnectionString;
+            con.ConnectionString = connectionString;
         }
 
         public void exitBtn_Click(object sender, EventArgs e)
