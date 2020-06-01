@@ -196,6 +196,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\pic\WonderWoman.jpg" />
+    <None Include="bin\Debug\icons\3d-glasses.png" />
+    <None Include="bin\Debug\icons\login.png" />
+    <None Include="bin\Debug\icons\log.png" />
+    <None Include="bin\Debug\icons\back_button.png" />
+    <None Include="bin\Debug\icons\Untitled.png" />
+    <None Include="bin\Debug\icons\ticket.png" />
     <Content Include="Cinema.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

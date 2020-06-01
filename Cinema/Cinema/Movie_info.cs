@@ -9,7 +9,7 @@ namespace Cinema
     public partial class Movie_info : Form
     {
         int id;
-        string idS, imdbLink;
+        string idS, imdbLink, movieGenre;
         OleDbConnection con = new OleDbConnection();
 
         public Movie_info(int idmovie)
@@ -25,35 +25,46 @@ namespace Cinema
             con.Open();
             OleDbCommand cmd = new OleDbCommand("select * from Movies where id_movie=" + id + "", con);
             OleDbDataReader rdr = cmd.ExecuteReader();
+            string[] movies = new string[10];
             while (rdr.Read())
             {
-                titleLbl.Text = rdr[1].ToString();
-                //3d
-                OleDbCommand cmd3d = new OleDbCommand("select id_movie from Movies where[3D] = True", con);
-                OleDbDataReader rdr3d = cmd3d.ExecuteReader();
-                idS = id.ToString();
-                while (rdr3d.Read())
-                    if (rdr3d[0].ToString() == idS)
-                        threeDLbl.Visible = true;
-                yearTb.Text = rdr[4].ToString();
-                //genre
-                OleDbCommand cmd2 = new OleDbCommand("select id_genr, genre_name from Genre inner join Movies on Genre.id_genr=Movies.id_gen", con);
-                OleDbDataReader rdr2 = cmd2.ExecuteReader();
-                while (rdr2.Read())
-                {
-                    if (rdr2[0].ToString() == rdr[2].ToString())
-                        genreTb.Text = rdr2[1].ToString();
-                }
-                ageTb.Text = rdr[3].ToString();
-                priceTb.Text = rdr[6].ToString();
-                roomTb.Text = rdr[7].ToString();
-                //picture
-                string img = rdr["poster"].ToString();
-                if (img != "")
-                    picBox.Load("pic\\" + img);
-                yearTb.ForeColor = genreTb.ForeColor = ageTb.ForeColor = priceTb.ForeColor = roomTb.ForeColor = Color.DarkRed;
-                imdbLink = rdr["imdblink"].ToString();
+                movies[1] = rdr[1].ToString();
+                movies[2] = rdr[2].ToString();
+                movies[3] = rdr[3].ToString();
+                movies[4] = rdr[4].ToString();
+                movies[5] = rdr[5].ToString();
+                movies[6] = rdr[6].ToString();
+                movies[7] = rdr[7].ToString();
+                movies[8] = rdr[8].ToString();
+                movies[9] = rdr[9].ToString();
             }
+            titleLbl.Text = movies[1];
+            //3d
+            OleDbCommand cmd3d = new OleDbCommand("select id_movie from Movies where[3D] = True", con);
+            OleDbDataReader rdr3d = cmd3d.ExecuteReader();
+            idS = id.ToString();
+            while (rdr3d.Read())
+                if (rdr3d[0].ToString() == idS)
+                    threeDLbl.Visible = true;
+            yearTb.Text = movies[3];
+            //genre
+            OleDbCommand cmd2 = new OleDbCommand("select id_genr, genre_name from Genre inner join Movies on Genre.id_genr=Movies.id_gen", con);
+            OleDbDataReader rdr2 = cmd2.ExecuteReader();
+            while (rdr2.Read())
+            {
+                if (rdr2[0].ToString() == movies[2])
+                    movieGenre = rdr2[1].ToString();
+            }
+            genreTb.Text = movieGenre;
+            ageTb.Text = movies[3];
+            priceTb.Text = movies[6];
+            roomTb.Text = movies[7];
+            //picture
+            string img = movies[8];
+            if (img != "")
+                picBox.Load("pic\\" + img);
+            yearTb.ForeColor = genreTb.ForeColor = ageTb.ForeColor = priceTb.ForeColor = roomTb.ForeColor = Color.DarkRed;
+            imdbLink = movies[9];
             con.Close();
         }
 
